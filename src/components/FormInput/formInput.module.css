@@ -1,0 +1,42 @@
+.inputCont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: var(--input-w);
+}
+
+.inputLabel {
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.input {
+    padding: 0.25rem;
+    border-radius: 0px;
+    border: 2px solid var(--color-black);
+    width: 100%;
+    margin-bottom: 0.75rem;
+    height: var(--input-h);
+}
+
+.inputUl {
+    list-style-type: none;
+}
+
+.inputLi {
+    display: flex;
+    margin-bottom: 0.25rem;
+}
+
+.inputImg {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 800px) {
+    .inputCont {
+        width: 100%;
+    }
+}
