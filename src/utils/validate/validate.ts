@@ -1,6 +1,6 @@
 const MIN_PASSWORD_LENGTH = 8;
 
-export type Validate = Record<string, boolean>;
+type Validate = Record<string, boolean>;
 
 export class Validator {
     #input: string;
@@ -11,7 +11,7 @@ export class Validator {
         this.#type = type;
     }
 
-    get validate(): Record<string, boolean> {
+    get validate(): Validate {
         if (!this.#input) return {};
 
         if (this.#type === "email") {
@@ -23,7 +23,7 @@ export class Validator {
         }
     }
 
-    get #password(): Record<string, boolean> {
+    get #password(): Validate {
         // this would remove any characters that is not a letter, digit, or space
         const nonSpecialCaseCharacters = this.#input.replace(/[^a-z\d ]/gi, "");
         const result = {
@@ -37,7 +37,7 @@ export class Validator {
         return result;
     }
 
-    get #email(): Record<string, boolean> {
+    get #email(): Validate {
         const email =
             /^\w+([.-]?\w+)+@\w+([.:]?\w+)+(\.[a-zA-Z0-9]{2,})+$/.test(
                 this.#input
