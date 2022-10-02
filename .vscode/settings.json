@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": true,
     "eslint.alwaysShowStatus": true,
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": [
         "source.formatDocument",
