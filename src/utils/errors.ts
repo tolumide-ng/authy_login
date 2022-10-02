@@ -4,5 +4,5 @@ export const errors: Record<string, string> = {
     upperCase: "uppercase letter",
     number: "number",
     specialCharacter: "special character",
-    email: "Please enter a valid email address"
+    email: "Invalid Email"
 }
