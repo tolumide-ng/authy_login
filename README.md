@@ -12,4 +12,5 @@
 ### Used technologies
 
 1. The application uses `create react app` with `typescript`, Typescript helps uphold a strong type system in order to minimize bugs in the system
-2. The application uses code-quality tools like `eslint` and `prettier` for code-formatting and wraning about duplicates, syntax errors e.t.c
+2. The major reason for using `react` is because it is a simple library and one that I am very experienced using
+3. The application uses code-quality tools like `eslint` and `prettier` for code-formatting and wraning about duplicates, syntax errors e.t.c
