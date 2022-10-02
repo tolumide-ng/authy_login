@@ -23,4 +23,7 @@
 
 .pageBody {
     height: calc(100vh - var(--head-h));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
