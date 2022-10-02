@@ -1,4 +1,3 @@
-import * as React from "react";
 import { render, screen } from "@testing-library/react";
 import { FormInput } from "./formInput";
 import { errors } from "../../utils/errors";
