@@ -17,8 +17,8 @@ export const FormInput = ({inputValue, inputName, inputType, handleChange, valid
         <div className={styles.inputCont}>
             <label htmlFor={inputName} className={styles.inputLabel}>
                 {inputName}
+                <input className={styles.input} type={inputType} id={inputName} name={inputName} value={inputValue} onChange={handleChange} />
             </label>
-                <input className={styles.input} type={inputType} id={inputType} name={inputName} value={inputValue} onChange={handleChange} />
 
             <ul className={styles.inputUl}>
                 {Object.entries(validatedInput)?.map(([key, value]) => {
