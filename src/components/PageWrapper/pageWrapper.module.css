@@ -1,0 +1,26 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.pageHead {
+    height: var(--head-h);
+    background-color: var(--color-black);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.pageTitle {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.pageBody {
+    height: calc(100vh - var(--head-h));
+}
